@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class SwipeCard extends StatelessWidget {
@@ -73,7 +71,7 @@ class SwipeCard extends StatelessWidget {
                 ),
                 IconButton(
                   icon: Icon(
-                    Icons.add_circle_outline_rounded,
+                    Icons.add_circle_outline,
                     color: Colors.white,
                   ),
                   onPressed: () {},
@@ -116,7 +114,7 @@ class SwipeCard extends StatelessWidget {
                 FlatButton.icon(
                   onPressed: () {},
                   icon: Icon(
-                    Icons.favorite_border_outlined,
+                    Icons.favorite_border,
                     color: Colors.white,
                   ),
                   label: Text(
@@ -126,7 +124,7 @@ class SwipeCard extends StatelessWidget {
                 ),
                 FlatButton.icon(
                   onPressed: () {},
-                  icon: Icon(Icons.message_outlined),
+                  icon: Icon(Icons.message),
                   label: Text(
                     "40 Comments",
                     style: TextStyle(color: Colors.white),
@@ -135,7 +133,7 @@ class SwipeCard extends StatelessWidget {
                 FlatButton.icon(
                   onPressed: () {},
                   icon: Icon(
-                    Icons.redo_rounded,
+                    Icons.redo,
                     color: Colors.white,
                   ),
                   label: Text(

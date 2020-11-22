@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:swipeup/ui/screens/profile.dart';
-import 'package:swipeup/ui/screens/requestpage.dart';
-import 'package:swipeup/ui/widgets/swipeCard.dart';
 
-class HomePage extends StatefulWidget {
+class Requestpage extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _RequestpageState createState() => _RequestpageState();
 }
 
-class _HomePageState extends State<HomePage> {
-  final controller = PageController(initialPage: 0);
+class _RequestpageState extends State<Requestpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,8 +22,13 @@ class _HomePageState extends State<HomePage> {
         ),
         centerTitle: true,
         title: IconButton(
-          icon: Icon(
-            Icons.home,
+          icon: InkWell(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: Icon(
+              Icons.home,
+            ),
           ),
           onPressed: () {},
         ),
@@ -72,16 +74,6 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
         ],
-      ),
-      body: Center(
-        child: PageView.builder(
-          controller: controller,
-          scrollDirection: Axis.vertical,
-          itemCount: 20,
-          itemBuilder: (BuildContext context, int index) {
-            return SwipeCard();
-          },
-        ),
       ),
     );
   }
